@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_hc5861
+name: Build_DEVICE_hiwifi_hc5861
 
 on: 
   release:
@@ -68,7 +68,7 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         ./scripts/feeds install -a
-    - name: Configuration Customization - Build_hc5861
+    - name: Configuration Customization - Build_DEVICE_hiwifi_hc5861
       env:
         CONFIG_FILE: 'test.config'
       run: |
